@@ -31,7 +31,7 @@ class ExampleService
      */
     public function createExample(string $name): ?Example
     {
-        $example = new Example(null, $name);
+        $example = new Example(0, $name);
 
         return $this->exampleRepository->save($example);
     }
