@@ -5,6 +5,10 @@ docker_up:
 	docker compose -f docker-compose.local.yml exec api php artisan key:generate
 	docker compose -f docker-compose.local.yml exec api php artisan migrate
 
+# Laravel Octuneを起動
+docker_run:
+	docker compose -f docker-compose.local.yml exec api php artisan octane:start --host=0.0.0.0 --port=8000 
+
 # コンテナに接続
 docker_connect:
 	docker compose -f docker-compose.local.yml exec api bash
