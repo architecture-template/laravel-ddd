@@ -2,7 +2,6 @@
 docker_up:
 	docker compose -f docker-compose.local.yml up -d --build
 	docker compose -f docker-compose.local.yml exec api composer install
-	docker compose -f docker-compose.local.yml exec api php artisan key:generate
 	docker compose -f docker-compose.local.yml exec api php artisan migrate
 
 # Laravel Octuneを起動
