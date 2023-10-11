@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Infrastructures\Apis;
+namespace App\Infra\Apis;
 
 class ExampleApi
 {

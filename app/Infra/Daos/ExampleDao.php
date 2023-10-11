@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Infrastructures\Daos;
+namespace App\Infra\Daos;
 
 use App\Domain\Models\Example;
 use App\Models\Example as EloquentExample;

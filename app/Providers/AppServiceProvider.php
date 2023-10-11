@@ -4,7 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use App\Domain\Repositories\ExampleRepository;
-use App\Infrastructures\Daos\ExampleDao;
+use App\Infra\Daos\ExampleDao;
 
 class AppServiceProvider extends ServiceProvider
 {
