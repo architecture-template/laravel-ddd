@@ -19,7 +19,6 @@ class ExampleController extends Controller
      */
     private $exampleOutput;
 
-
     /**
      * ExampleController constructor
      * @param ExampleService $exampleService
