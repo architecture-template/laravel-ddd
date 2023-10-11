@@ -30,7 +30,6 @@ class ExampleController extends Controller
     public function getExample(int $id)
     {
         $example = $this->exampleService->getExampleById($id);
-
         if ($example === null) {
             return response()->json(['error' => 'Example not found'], 404);
         }
